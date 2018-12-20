@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/upload.css" type="text/css"/>
+<title>校内下载站</title>
+</head>
+<body>
+	<div class="upload">
+		<a href="index.php"><span style="float: left;margin-left: 40%;"><返回主页</span></a></br></br></br>
+			<p>添加软件</p>
+			<form action="upload.php" name="frm" method="post" enctype="multipart/form-data"><br />
+				<select class="software" name="upsoftware">
+  				<option value="ide">开发工具</option>
+  				<option value="devlop_environment">开发环境</option>
+  				<option value="gho">系统镜像</option>
+  				<option value="software">常用软件</option>
+  				<option value="vedio">教学视频</option>
+				</select><br />
+	 			
+ 				<input class="img" name='upimg' type='file'/>
+ 			
+ 			</br>
+ 				<span style="letter-spacing:1px; font-size: 14px; color: #FF0000; ">*只允许上传jpg|png|bmp|pjpeg|gif格式的图片</span></br>
+
+		
+ 				<input class="name" name="upname" type="text" placeholder="软件名称"/><br />
+ 			
+	
+
+ 				<input class="path" name="uppath" type="text" placeholder="下载链接" /><br />
+ 			
+	 			<textarea class="abstract" name="upabstract" placeholder="软件描述"></textarea><br /><br /><br />
+	 			<input class="submit" name="btn" type="submit" value="上传" />
+	 		</form>
+	</div>
+	
+</body>
+</html>
