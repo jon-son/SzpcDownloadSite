@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	overflow: hidden;
+	background-image: url("../img/background.png");
+	-moz-background-size:100% 100%; /*背景高度与宽度自适应*/
+    background-size:100% 100%; 	/*                 */
+	width:100%; height:100%; 		/*背景高度与宽度自适应*/
+	color: white;
+	text-align: center;
+}
+a{
+	color: black;
+}
+a:hover {
+	color: #f76f76;
+}
+.upload{
+	margin-top: 10%;
+}
+.upload p{
+	font-size: 30px;
+	color: black;
+}
+.name,.id,.path,.local,.time{
+	margin-top: 1%;
+	border-radius: .5em;
+	width: 20%;
+	height: 32px;
+}
+.software,.activity,.recruit{
+	border-radius: .5em;
+	height: 32px;
+	margin-top: 1%;
+	width: 20%;
+}
+
+.abstract{
+	margin-top: 1%;
+	border-radius: .5em;
+	width: 20%;
+	height: 60px;
+}
+.img{
+	margin-top: 2%;
+	width:17%;
+	font-size: 16px;
+                color:black;
+}
+.submit{
+	width: 60px;
+	height: 25px;
+	border-radius: 1.5em;
+	
+}
+/*备案信息*/
+.foot{
+	color: #F8F8F8;
+	position: fixed;bottom: 2%;
+	left: 0;
+	right: 0;
+	font-size: 5%;
+}
+.foot a{
+	color:#F8F8F8;
+	text-decoration: none;
+}
