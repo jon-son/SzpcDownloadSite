@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/upload.css" type="text/css"/>
+
+<title>校内下载站</title>
+</head>
+<body>
+	<div class="upload">
+		<a href="index.php"><span style="float: left;margin-left: 40%;"><返回主页</span></a></br></br></br>
+		<p>添加活动</p>
+			<form action="upload.php" name="frm" method="post" enctype="multipart/form-data"><br />
+				<select class="recruit" name="uprecruit">
+  				<option value="work">勤工俭学</option>
+  				<option value="internship">校外实习</option>
+  				<option value="practice">校内实践</option>
+			</select><br />
+	 			
+ 				<input class="img" name='upimg' type='file'/></br>
+ 			
+ 			
+ 				<font style="letter-spacing:1px; font-size: 14px;" color="#FF0000">*只允许上传jpg|png|bmp|pjpeg|gif格式的图片</font></br>
+ 			
+		
+ 			<input class="name" name="upname" type="text" placeholder="活动名称"/><br />
+ 			
+
+ 			<input class="local" name="uplocal" type="text" placeholder="活动地点" /><br />
+ 			
+
+			<input class="time" type="text" id="test1" placeholder="活动时间" name="uptime"/>
+
+			<script src="../laydate/laydate.js"></script> <!-- 改成你的路径 -->
+			<script>
+                //执行一个laydate实例
+                laydate.render({
+                    elem: '#test1',
+                    type: 'datetime'
+                });
+			</script>
+			
+			<br />
+ 			
+	 		<textarea class="abstract" name="upabstract" placeholder="活动描述"></textarea><br /><br /><br />
+	 		<input class="submit" name="btn" type="submit" value="发布活动" />
+	 </form>
+
+	</div>
+	
+</body>
+</html>
